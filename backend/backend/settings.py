@@ -3,6 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 # from .settings import *
 # from .settings import BASE_DIR
+load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
@@ -11,7 +12,6 @@ SECRET_KEY = os.environ['MY_SECRET_KEY']
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-load_dotenv()
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
