@@ -31,6 +31,8 @@ SECRET_KEY = "django-insecure-&f2^oj9vf^3t2iy3gxyr)y@lnerxn6os5i#un5_ts2ih!!%wat
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
