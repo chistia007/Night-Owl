@@ -22,7 +22,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'night-owl-backend.azurewebsites.net' 
+    'https://victorious-river-09d149f03.4.azurestaticapps.net' 
 ]
 
 
