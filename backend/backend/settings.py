@@ -1,5 +1,6 @@
 import os 
 from pathlib import Path
+from dotenv import load_dotenv
 # from .settings import *
 # from .settings import BASE_DIR
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,6 +10,8 @@ DEBUG = False
 SECRET_KEY = os.environ['MY_SECRET_KEY']
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+load_dotenv()
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
