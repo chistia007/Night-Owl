@@ -1,6 +1,9 @@
 import os 
 from .settings import *
 from .settings import BASE_DIR
+
+from dotenv import load_dotenv
+load_dotenv()
 # BASE_DIR = Path(__file__).resolve().parent.parent
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
