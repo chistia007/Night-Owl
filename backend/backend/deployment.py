@@ -1,13 +1,12 @@
-import os 
+import os
 from .settings import *
-from .settings import BASE_DIR
-
 from dotenv import load_dotenv
+
 load_dotenv()
-# BASE_DIR = Path(__file__).resolve().parent.parent
+
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
-CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
-DEBUG = False
+CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # Added control for DEBUG
 SECRET_KEY = os.environ['MY_SECRET_KEY']
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -25,9 +24,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://victorious-river-09d149f03.4.azurestaticapps.net' 
+    'https://victorious-river-09d149f03.4.azurestaticapps.net'
 ]
-
 
 STORAGES = {
     "default": {
@@ -39,7 +37,7 @@ STORAGES = {
 }
 
 CONNECTION = os.environ['AZURE_POSTGRESQL_CONNECTIONSTRING']
-CONNECTION_STR = {pair.split('=')[0]:pair.split('=')[1] for pair in CONNECTION.split(' ')}
+CONNECTION_STR = {pair.split('=')[0]: pair.split('=')[1] for pair in CONNECTION.split(' ')}
 
 DATABASES = {
     "default": {
@@ -69,18 +67,13 @@ LOGGING = {
     },
 }
 
+ADMINS = [("Nick", "YOURMAIL.com")]  # Ensure you specify actual admin email addresses.
 
-
-# ADMINS = [("Nick", "YOURMAIL.com")]
-
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-# DEFAULT_FROM_EMAIL = 'default from email'
-
-
-
-STATIC_ROOT = BASE_DIR/'staticfiles'
+# If you need email configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+DEFAULT_FROM_EMAIL = 'default from email'
