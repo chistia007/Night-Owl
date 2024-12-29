@@ -30,7 +30,13 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 INSTALLED_APPS = [
+    "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',  
+]
+
+FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
+STATICFILES_DIRS = [
+    os.path.join(FRONTEND_DIR, 'build', 'static'),  # Path to React build static files
 ]
 
 

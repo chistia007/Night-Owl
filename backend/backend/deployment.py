@@ -23,8 +23,20 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+INSTALLED_APPS = [
+    "whitenoise.runserver_nostatic",
+    'django.contrib.staticfiles',  
+]
+
+
+
 CORS_ALLOWED_ORIGINS = [
     'https://victorious-river-09d149f03.4.azurestaticapps.net'
+]
+
+FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
+STATICFILES_DIRS = [
+    os.path.join(FRONTEND_DIR, 'build', 'static'),  # Path to React build static files
 ]
 
 STORAGES = {
@@ -70,10 +82,10 @@ LOGGING = {
 ADMINS = [("Nick", "YOURMAIL.com")]  # Ensure you specify actual admin email addresses.
 
 # If you need email configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-DEFAULT_FROM_EMAIL = 'default from email'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+# DEFAULT_FROM_EMAIL = 'default from email'
