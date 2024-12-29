@@ -25,9 +25,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'https://victorious-river-09d149f03.4.azurestaticapps.net' 
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'https://victorious-river-09d149f03.4.azurestaticapps.net' 
+# ]
 
 INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",

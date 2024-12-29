@@ -30,9 +30,9 @@ INSTALLED_APPS = [
 
 
 
-CORS_ALLOWED_ORIGINS = [
-    'https://victorious-river-09d149f03.4.azurestaticapps.net'
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'https://victorious-river-09d149f03.4.azurestaticapps.net'
+# ]
 
 FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
 STATICFILES_DIRS = [
