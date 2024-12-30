@@ -61,6 +61,11 @@ DATABASES = {
     }
 }
 
+
+CORS_ALLOWED_ORIGINS = [
+    'https://gray-sand-009cfb200.4.azurestaticapps.net' 
+]
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
