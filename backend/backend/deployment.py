@@ -63,7 +63,8 @@ DATABASES = {
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://gray-sand-009cfb200.4.azurestaticapps.net' 
+    # 'https://gray-sand-009cfb200.4.azurestaticapps.net'
+    "http://localhost:3000",
 ]
 
 LOGGING = {

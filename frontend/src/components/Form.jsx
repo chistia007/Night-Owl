@@ -2,7 +2,7 @@ import { useState } from "react";
 import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
-import "../styles/Form.css"
+import "../styles/Form.css";
 //import LoadingIndicator from "./LoadingIndicator";
 
 function Form({ route, method }) {
@@ -14,22 +14,29 @@ function Form({ route, method }) {
     const name = method === "login" ? "Login" : "Register";
 
     const handleSubmit = async (e) => {
-        setLoading(true);
         e.preventDefault();
+        setLoading(true);
 
         try {
-            const res = await api.post(route, { username, password })
+            // Send login request
+            const res = await api.post(route, { username, password });
+
+            // If login is successful, store the tokens and redirect
             if (method === "login") {
                 localStorage.setItem(ACCESS_TOKEN, res.data.access);
                 localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
-                navigate("/")
+                // Redirect to the home page after login
+                navigate("/");
             } else {
-                navigate("/login")
+                // Redirect to the login page if registering
+                navigate("/login");
             }
         } catch (error) {
-            alert(error)
+            // Display an error message in case of failure
+            alert("Login failed: " + error.message);
         } finally {
-            setLoading(false)
+            // Stop loading indicator
+            setLoading(false);
         }
     };
 
@@ -42,6 +49,7 @@ function Form({ route, method }) {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder="Username"
+                required
             />
             <input
                 className="form-input"
@@ -49,8 +57,9 @@ function Form({ route, method }) {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
+                required
             />
-            {loading && <LoadingIndicator />}
+            {loading && <div>Loading...</div>}
             <button className="form-button" type="submit">
                 {name}
             </button>
@@ -58,4 +67,4 @@ function Form({ route, method }) {
     );
 }
 
-export default Form
+export default Form;
