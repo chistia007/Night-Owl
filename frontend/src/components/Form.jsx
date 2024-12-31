@@ -26,7 +26,7 @@ function Form({ route, method }) {
                 localStorage.setItem(ACCESS_TOKEN, res.data.access);
                 localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
                 // Redirect to the home page after login
-                navigate("/");
+                navigate("/home");
             } else {
                 // Redirect to the login page if registering
                 navigate("/login");

@@ -11,6 +11,8 @@ CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
 
 DEBUG = False
 SECRET_KEY = os.environ['MY_SECRET_KEY']
+ROOT_URLCONF = 'backend.urls'
+
 
 # Static files
 STATIC_URL = '/static/'
@@ -19,10 +21,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True  # Or use CORS_ALLOWED_ORIGINS for restricted origins
 CORS_ALLOWED_ORIGINS = [
-    'https://gray-sand-009cfb200.4.azurestaticapps.net',
+    "https://gray-sand-009cfb200.4.azurestaticapps.net",
     "http://localhost:3000",
     "https://localhost:3000",
-    "http://localhost:5173"
+    "http://localhost:5173",
 ]
 CSRF_COOKIE_SAMESITE = 'None'  # Required for cross-origin requests
 CSRF_COOKIE_SECURE = True  # Required if you're using HTTPS
@@ -52,6 +54,21 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'django.contrib.sessions',
+]
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # This is optional, depending on your template directory setup
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
 ]
 
 # Database connection
