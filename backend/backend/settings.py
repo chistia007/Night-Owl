@@ -60,7 +60,12 @@ DATABASES = {
         "HOST": CONNECTION_STR['host'],
         "USER": CONNECTION_STR['user'],
         "PASSWORD": CONNECTION_STR['password'],
+        'PORT': CONNECTION_STR['port'],  # The default PostgreSQL port
+        'OPTIONS': {
+            'sslmode': 'require',  # Required for Azure PostgreSQL to use SSL
+        },
     }
+    
 }
 
 LOGGING = {
