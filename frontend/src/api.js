@@ -2,7 +2,7 @@ import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
 
 // Default API URL
-const apiUrl = "/choreo-apis/awbo/backend/rest-api-be2/v1.0";
+const apiUrl = "night-owl-backend.azurewebsites.net/";
 
 // Determine the API URL from the environment variables
 const api = axios.create({
