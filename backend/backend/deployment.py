@@ -6,7 +6,7 @@ from datetime import timedelta
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['night-owl-backend.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://night-owl-backend.azurewebsites.net']
 
 DEBUG = False
