@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'], 'localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGINS = ['http://'+os.environ['WEBSITE_HOSTNAME']]
 
 DEBUG = False
 SECRET_KEY = os.environ['MY_SECRET_KEY']
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'django.contrib.sessions',
+    'django_extensions',
 ]
 TEMPLATES = [
     {
