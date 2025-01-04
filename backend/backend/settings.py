@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'django.contrib.sessions',
-    'django_extensions',
+    
 ]
 TEMPLATES = [
     {
