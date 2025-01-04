@@ -6,8 +6,8 @@ from datetime import timedelta
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
-CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
+ALLOWED_HOSTS = ['night-owl-backend.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://night-owl-backend.azurewebsites.net']
 
 DEBUG = False
 SECRET_KEY = os.environ['MY_SECRET_KEY']
