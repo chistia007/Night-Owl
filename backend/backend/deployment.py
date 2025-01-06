@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://night-owl-backend.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://night-owl-backend.azurewebsites.net','http://night-owl-backend.azurewebsites.net']
 
 DEBUG = False
 SECRET_KEY = os.environ['MY_SECRET_KEY']
@@ -136,6 +136,17 @@ STORAGES = {
         'BACKEND': 'whitenoise.storage.CompressedStaticFilesStorage',
     },
 }
+
+
+ADMINS = [("chistia007", "chisti.khan1999@gmail.com.com")]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+DEFAULT_FROM_EMAIL = 'default from email'
 
 # Default auto field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
