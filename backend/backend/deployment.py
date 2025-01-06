@@ -6,7 +6,7 @@ from datetime import timedelta
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://night-owl-backend.azurewebsites.net']
 CSRF_TRUSTED_ORIGINS = ['https://night-owl-backend.azurewebsites.net','http://night-owl-backend.azurewebsites.net']
 
 DEBUG = False
@@ -22,6 +22,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 CORS_ALLOW_ALL_ORIGINS = True  # Or use CORS_ALLOWED_ORIGINS for restricted origins
 CORS_ALLOWED_ORIGINS = [
     "https://gray-sand-009cfb200.4.azurestaticapps.net",
+    "http://gray-sand-009cfb200.4.azurestaticapps.net",
 
 ]
 CSRF_COOKIE_SAMESITE = 'None'  # Required for cross-origin requests
@@ -150,3 +151,5 @@ DEFAULT_FROM_EMAIL = 'default from email'
 
 # Default auto field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
