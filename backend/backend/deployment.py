@@ -139,7 +139,7 @@ STORAGES = {
 }
 
 
-ADMINS = [("chistia007", "chisti.khan1999@gmail.com")]
+ADMINS = [("chistia007", "chisti.khan1999@gmail.com.com")]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
