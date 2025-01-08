@@ -22,7 +22,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-
+      
       - name: Install dependencies
         run: |
           cd backend
@@ -35,13 +35,11 @@ jobs:
 
       - name: Collect static files
         run: |
-          cd backend
+          cd backend 
           python manage.py collectstatic --noinput
 
       - name: Zip artifact for deployment
-        run: |
-          cd backend
-          zip -r release.zip .
+        run: zip -r release.zip ./backend/*
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
@@ -65,7 +63,7 @@ jobs:
           name: python-app
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip -d backend
+        run: unzip release.zip
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -80,4 +78,3 @@ jobs:
         with:
           app-name: 'night-owl-backend'
           slot-name: 'Production'
-          package: './backend/release.zip'
