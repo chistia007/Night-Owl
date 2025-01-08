@@ -33,16 +33,19 @@ jobs:
         run: |
           cd backend
           python manage.py test
-      - name: Run Django server
-         run: |
-          cd backend
-          python manage.py migrate
-          python manage.py runserver 
 
+      
       - name: Collect static files
         run: |
           cd backend 
           python manage.py collectstatic --noinput
+
+      - name: Run Django server
+        run: |
+          cd backend
+          python manage.py migrate
+          python manage.py runserver 
+
 
       - name: Zip artifact for deployment
         run: 
