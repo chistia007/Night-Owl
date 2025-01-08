@@ -26,7 +26,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd backend
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run tests
@@ -34,22 +33,13 @@ jobs:
           cd backend
           python manage.py test
 
-      
       - name: Collect static files
         run: |
           cd backend 
           python manage.py collectstatic --noinput
 
-      - name: Run Django server
-        run: |
-          cd backend
-          python manage.py migrate
-          python manage.py runserver 
-
-
       - name: Zip artifact for deployment
-        run: 
-          zip -r release.zip ./backend/*
+        run: zip -r release.zip ./backend/*
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
