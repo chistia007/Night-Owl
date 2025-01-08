@@ -65,15 +65,13 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
-      # Login to Azure using Federated Identity (OIDC)
-      - name: Login to Azure using Federated Identity
+      - name: Login to Azure
         uses: azure/login@v2
         with:
-          # Use OIDC authentication for federated login instead of client credentials
-          federated-identity-issuer: https://github.com  # Issuer URL for GitHub OIDC
-          federated-identity-subject: 'repo:chistia007/Night-Owl:environment:Production'  # Subject claim for your repo/environment
-          # The subscription-id is automatically inferred
-          
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4F4AC98F626740248F241A686899371C }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B10635E1D60D4805A41ACE028085A09E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_456C95DF18394F38A778DF245F61595B }}
+
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
