@@ -41,14 +41,13 @@ jobs:
 
       - name: Zip artifact for deployment
         run: 
-          # cd backend
           zip -r release.zip ./backend/*
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
           name: python-app
-          path: backend/release.zip
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -66,7 +65,7 @@ jobs:
           name: python-app
 
       - name: Unzip artifact for deployment
-        run: unzip backend/release.zip
+        run: unzip release.zip
 
       - name: Login to Azure
         uses: azure/login@v2
