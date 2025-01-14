@@ -1,0 +1,23 @@
+.ui-text {
+    height: 400px;
+    width: 400px;
+  }
+  
+  .ui-text .text {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-15-copy@2x.png);
+    background-size: 100% 100%;
+    height: 154px;
+    left: 88px;
+    position: relative;
+    top: 103px;
+    width: 225px;
+  }
+  
+  .ui-text .layer-6 {
+    height: 142px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    width: 214px;
+  }
+  

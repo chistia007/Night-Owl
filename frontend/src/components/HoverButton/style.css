@@ -1,0 +1,36 @@
+.hover-button {
+    all: unset;
+    box-sizing: border-box;
+    height: 24px;
+    position: relative;
+    width: 57px;
+  }
+  
+  .hover-button .text-wrapper {
+    color: #000000;
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .hover-button:hover .text-wrapper {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      180deg,
+      rgb(20.29, 138.57, 48.28) 0%,
+      rgb(80.88, 255, 122.09) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+    width: 57px;
+  }
+  

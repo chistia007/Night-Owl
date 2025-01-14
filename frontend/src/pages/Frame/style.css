@@ -1,0 +1,785 @@
+.frame {
+    background: linear-gradient(
+      180deg,
+      rgb(32.14, 15.29, 58.57) 0%,
+      rgb(40.78, 22.89, 68.86) 17.88%,
+      rgb(51.91, 32.67, 82.11) 28.91%,
+      rgb(62.51, 41.98, 94.72) 35.5%,
+      rgb(144.59, 120.03, 183.13) 100%
+    );
+    background-color: rgba(255, 255, 255, 1.0);
+    height: 935px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .frame .overlap {
+    height: 758px;
+    left: 70px;
+    position: absolute;
+    top: 251px;
+    width: 1438px;
+  }
+  
+  .frame .div-2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 885px;
+  }
+  
+  .frame .div-3 {
+    align-self: stretch;
+    height: 436px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .frame .your-partner-in {
+    height: 159px;
+    left: 2px;
+    position: absolute;
+    top: 11px;
+    width: 729px;
+  }
+  
+  .frame .div-4 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 0;
+    position: absolute;
+    top: 218px;
+    width: 548px;
+  }
+  
+  .frame .p {
+    align-self: stretch;
+    color: #e8e8e8;
+    font-family: "Source Sans Pro", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .frame .text-wrapper-4 {
+    align-self: stretch;
+    color: #d4d4d4;
+    font-family: "Source Sans Pro", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  
+  .frame .div-5 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 25px;
+    position: relative;
+  }
+  
+  .frame .div-wrapper-2 {
+    align-items: center;
+    background-color: #d3b7fe;
+    border-radius: 40px;
+    display: flex;
+    gap: 10px;
+    height: 57px;
+    justify-content: center;
+    padding: 16px 45px;
+    position: relative;
+    width: 203px;
+  }
+  
+  .frame .text-wrapper-5 {
+    color: #000000;
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .frame .div-wrapper-3 {
+    align-items: center;
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    gap: 10px;
+    height: 57px;
+    justify-content: center;
+    padding: 16px 39px;
+    position: relative;
+    width: 203px;
+  }
+  
+  .frame .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.50px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .frame .background-cloud-bg {
+    height: 302px;
+    left: 509px;
+    position: absolute;
+    top: 390px;
+    width: 549px;
+  }
+  
+  .frame .cloud-bg {
+    height: 146px;
+    left: 33px;
+    position: relative;
+    top: 156px;
+    width: 455px;
+  }
+  
+  .frame .bg-cloud-wrapper {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/bg-cloud-shadow-1@2x.png);
+    background-size: 100% 100%;
+    height: 138px;
+    position: relative;
+  }
+  
+  .frame .bg-cloud {
+    height: 111px;
+    left: 82px;
+    position: absolute;
+    top: 27px;
+    width: 283px;
+  }
+  
+  .frame .grid-instance {
+    height: 301px !important;
+    left: 1006px !important;
+    position: absolute !important;
+    top: 191px !important;
+    width: 302px !important;
+  }
+  
+  .frame .design-component-instance-node {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/grid-shadow-1@2x.png) !important;
+    height: 288px !important;
+    left: 6px !important;
+    top: 8px !important;
+    width: 289px !important;
+  }
+  
+  .frame .grid-2 {
+    height: 254px !important;
+    left: 19px !important;
+    top: 6px !important;
+    width: 256px !important;
+  }
+  
+  .frame .background-cloud-1 {
+    height: 302px !important;
+    left: 1035px !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 302px !important;
+  }
+  
+  .frame .background-cloud-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-96-1@2x.png) !important;
+    height: 186px !important;
+    left: 23px !important;
+    top: 58px !important;
+    width: 257px !important;
+  }
+  
+  .frame .background-cloud-1-instance {
+    height: 89px !important;
+    left: 41px !important;
+    top: 18px !important;
+    width: 175px !important;
+  }
+  
+  .frame .table-2 {
+    height: 164px !important;
+    left: 828px !important;
+    position: absolute !important;
+    top: 527px !important;
+    width: 384px !important;
+  }
+  
+  .frame .table-instance {
+    height: 143px !important;
+    left: 4px !important;
+    top: 14px !important;
+    width: 377px !important;
+  }
+  
+  .frame .stuff-box-3 {
+    height: 165px !important;
+    left: 1152px !important;
+    position: absolute !important;
+    top: 593px !important;
+    width: 164px !important;
+  }
+  
+  .frame .stuff-box-instance {
+    height: 40px !important;
+    left: 51px !important;
+    top: 51px !important;
+    width: 63px !important;
+  }
+  
+  .frame .table-locker-2 {
+    height: 137px !important;
+    left: 1049px !important;
+    position: absolute !important;
+    top: 554px !important;
+    width: 137px !important;
+  }
+  
+  .frame .table-locker-instance {
+    height: 122px !important;
+    left: 18px !important;
+    top: 8px !important;
+    width: 100px !important;
+  }
+  
+  .frame .stuff-box-1 {
+    height: 165px !important;
+    left: 1157px !important;
+    position: absolute !important;
+    top: 539px !important;
+    width: 165px !important;
+  }
+  
+  .frame .stuff-box-1-instance {
+    height: 47px !important;
+    left: 44px !important;
+    top: 59px !important;
+    width: 77px !important;
+  }
+  
+  .frame .imac-instance {
+    height: 181px !important;
+    left: 781px !important;
+    position: absolute !important;
+    top: 362px !important;
+    width: 289px !important;
+  }
+  
+  .frame .imac-2 {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/imac-shadow-1@2x.png) !important;
+    height: 181px !important;
+    left: 2px !important;
+  }
+  
+  .frame .imac-3 {
+    height: 155px !important;
+    left: 50px !important;
+    top: 26px !important;
+    width: 192px !important;
+  }
+  
+  .frame .ui-base-3 {
+    height: 274px !important;
+    left: 794px !important;
+    position: absolute !important;
+    top: 319px !important;
+    width: 274px !important;
+  }
+  
+  .frame .ui-base-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-13-copy-1@2x.png) !important;
+    height: 118px !important;
+    left: 48px !important;
+    top: 78px !important;
+    width: 178px !important;
+  }
+  
+  .frame .ui-base-3-instance {
+    height: 95px !important;
+    left: 10px !important;
+    top: 8px !important;
+    width: 157px !important;
+  }
+  
+  .frame .ui-dots-instance {
+    height: 11px !important;
+    left: 859px !important;
+    position: absolute !important;
+    top: 411px !important;
+    width: 33px !important;
+  }
+  
+  .frame .ui-dots-2 {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/dots-shadow-1@2x.png) !important;
+    height: 11px !important;
+  }
+  
+  .frame .ui-dots-3 {
+    height: 8px !important;
+    left: 1px !important;
+    width: 30px !important;
+  }
+  
+  .frame .ui-base-4 {
+    height: 274px !important;
+    left: 802px !important;
+    position: absolute !important;
+    top: 342px !important;
+    width: 275px !important;
+  }
+  
+  .frame .ui-base-4-instance {
+    height: 67px !important;
+    left: 92px !important;
+    top: 104px !important;
+    width: 91px !important;
+  }
+  
+  .frame .ui-base-2 {
+    height: 67px !important;
+  }
+  
+  .frame .ui-base-5 {
+    height: 65px !important;
+    top: 1px !important;
+    width: 91px !important;
+  }
+  
+  .frame .ui-base-6 {
+    height: 63px !important;
+    width: 90px !important;
+  }
+  
+  .frame .ui-text-3 {
+    height: 109px !important;
+    left: 885px !important;
+    position: absolute !important;
+    top: 429px !important;
+    width: 109px !important;
+  }
+  
+  .frame .ui-text-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-15-copy-1@2x.png) !important;
+    height: 42px !important;
+    left: 24px !important;
+    top: 28px !important;
+    width: 61px !important;
+  }
+  
+  .frame .ui-text-3-instance {
+    height: 39px !important;
+    left: 1px !important;
+    width: 58px !important;
+  }
+  
+  .frame .elements-wifi {
+    height: 275px;
+    left: 734px;
+    position: absolute;
+    top: 207px;
+    width: 274px;
+  }
+  
+  .frame .wifi {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/wifi-shadow-1@2x.png);
+    background-size: 100% 100%;
+    height: 95px;
+    left: 73px;
+    position: relative;
+    top: 99px;
+    width: 118px;
+  }
+  
+  .frame .wifi-2 {
+    height: 63px;
+    left: 14px;
+    position: absolute;
+    top: 0;
+    width: 89px;
+  }
+  
+  .frame .clock-instance {
+    height: 164px !important;
+    left: 864px !important;
+    position: absolute !important;
+    top: 158px !important;
+    width: 165px !important;
+  }
+  
+  .frame .clock-2 {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/clock-shadow-1@2x.png) !important;
+    height: 120px !important;
+    left: 23px !important;
+    top: 25px !important;
+    width: 117px !important;
+  }
+  
+  .frame .clock-3 {
+    height: 96px !important;
+    left: 11px !important;
+    top: 6px !important;
+    width: 96px !important;
+  }
+  
+  .frame .elements-orb-2 {
+    height: 275px !important;
+    left: 854px !important;
+    position: absolute !important;
+    top: 196px !important;
+    width: 275px !important;
+  }
+  
+  .frame .elements-orb-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-101-copy-2-2@2x.png) !important;
+    height: 61px !important;
+    left: 108px !important;
+    top: 108px !important;
+    width: 59px !important;
+  }
+  
+  .frame .elements-orb-2-instance {
+    height: 40px !important;
+    left: 9px !important;
+    top: 8px !important;
+    width: 40px !important;
+  }
+  
+  .frame .elements-orb-3 {
+    height: 275px !important;
+    left: 1163px !important;
+    position: absolute !important;
+    top: 424px !important;
+    width: 275px !important;
+  }
+  
+  .frame .ui-base-2-instance {
+    height: 274px !important;
+    left: 1070px !important;
+    position: absolute !important;
+    top: 284px !important;
+    width: 274px !important;
+  }
+  
+  .frame .ui-base-7 {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-12-copy-1@2x.png) !important;
+    height: 145px !important;
+    left: 48px !important;
+    top: 66px !important;
+    width: 178px !important;
+  }
+  
+  .frame .ui-base-8 {
+    height: 123px !important;
+    left: 10px !important;
+    top: 9px !important;
+    width: 157px !important;
+  }
+  
+  .frame .ui-base-1-instance {
+    height: 275px !important;
+    left: 1070px !important;
+    position: absolute !important;
+    top: 264px !important;
+    width: 274px !important;
+  }
+  
+  .frame .ui-base-9 {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-18-copy-1@2x.png) !important;
+    height: 137px !important;
+    left: 69px !important;
+    top: 70px !important;
+    width: 135px !important;
+  }
+  
+  .frame .ui-base-10 {
+    height: 117px !important;
+    left: 9px !important;
+    top: 9px !important;
+    width: 117px !important;
+  }
+  
+  .frame .ui-cursor-5 {
+    height: 110px !important;
+    left: 1215px !important;
+    position: absolute !important;
+    top: 416px !important;
+    width: 110px !important;
+  }
+  
+  .frame .ui-cursor-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-16-copy-1@2x.png) !important;
+    height: 100px !important;
+    left: 21px !important;
+    top: 16px !important;
+    width: 82px !important;
+  }
+  
+  .frame .ui-cursor-5-instance {
+    height: 49px !important;
+    left: 10px !important;
+    top: 8px !important;
+    width: 50px !important;
+  }
+  
+  .frame .lamp-table-2 {
+    height: 165px !important;
+    left: 1044px !important;
+    position: absolute !important;
+    top: 379px !important;
+    width: 164px !important;
+  }
+  
+  .frame .lamp-table-instance {
+    height: 126px !important;
+    left: 34px !important;
+    top: 39px !important;
+    width: 97px !important;
+  }
+  
+  .frame .elements-pin-4 {
+    height: 274px !important;
+    left: 946px !important;
+    position: absolute !important;
+    top: 196px !important;
+    width: 275px !important;
+  }
+  
+  .frame .elements-pin-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-99-1@2x.png) !important;
+    height: 111px !important;
+    left: 92px !important;
+    top: 83px !important;
+    width: 92px !important;
+  }
+  
+  .frame .elements-pin-4-instance {
+    height: 91px !important;
+    left: 9px !important;
+    top: 7px !important;
+    width: 75px !important;
+  }
+  
+  .frame .elements-pin-3 {
+    height: 275px !important;
+    left: 1044px !important;
+    position: absolute !important;
+    top: 150px !important;
+    width: 274px !important;
+  }
+  
+  .frame .elements-pin-3-instance {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-98-1@2x.png) !important;
+    height: 97px !important;
+    left: 95px !important;
+    top: 91px !important;
+    width: 85px !important;
+  }
+  
+  .frame .elements-pin-2 {
+    height: 76px !important;
+    left: 9px !important;
+    top: 8px !important;
+    width: 66px !important;
+  }
+  
+  .frame .stuff-book-1 {
+    height: 165px !important;
+    left: 912px !important;
+    position: absolute !important;
+    top: 446px !important;
+    width: 165px !important;
+  }
+  
+  .frame .stuff-book-instance {
+    height: 46px !important;
+    left: 22px !important;
+    top: 51px !important;
+    width: 119px !important;
+  }
+  
+  .frame .stuff-book-1-instance {
+    height: 46px !important;
+  }
+  
+  .frame .stuff-book-2 {
+    height: 6px !important;
+    top: 39px !important;
+    width: 119px !important;
+  }
+  
+  .frame .stuff-book-3 {
+    height: 46px !important;
+    left: 1px !important;
+    width: 117px !important;
+  }
+  
+  .frame .stuff-coffee-1 {
+    height: 82px !important;
+    left: 815px !important;
+    position: absolute !important;
+    top: 482px !important;
+    width: 83px !important;
+  }
+  
+  .frame .stuff-coffee-instance {
+    height: 40px !important;
+    left: 24px !important;
+    top: 21px !important;
+    width: 36px !important;
+  }
+  
+  .frame .seat-5 {
+    height: 192px !important;
+    left: 882px !important;
+    position: absolute !important;
+    top: 500px !important;
+    width: 192px !important;
+  }
+  
+  .frame .seat-instance {
+    height: 100px !important;
+    left: 53px !important;
+    top: 84px !important;
+    width: 85px !important;
+  }
+  
+  .frame .intellij-IDEA-icon {
+    height: 80px;
+    left: 1167px;
+    object-fit: cover;
+    position: absolute;
+    top: 362px;
+    width: 80px;
+  }
+  
+  .frame .upper-wrapper {
+    align-items: flex-start;
+    background-color: #ffffffb8;
+    border-radius: 85px;
+    box-shadow: 0px 16px 40.7px #00000040;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 85px;
+    left: 38px;
+    padding: 17px 30px;
+    position: absolute;
+    top: 27px;
+    width: 95%;
+  }
+  
+  .frame .upper {
+    height: 59px;
+    margin-bottom: -8.00px;
+    position: relative;
+    width: 1295px;
+  }
+  
+  .frame .div-wrapper-4 {
+    align-items: center;
+    border: 1.5px solid;
+    border-color: #000000;
+    border-radius: 28px;
+    display: flex;
+    gap: 10px;
+    height: 48px;
+    justify-content: center;
+    left: 91%;
+    padding: 14px 24px;
+    position: absolute;
+    top: 1px;
+    width: 184px;
+  }
+  
+  .frame .text-wrapper-7 {
+    color: #000000;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .frame .div-6 {
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .frame .premium-vector-black {
+    height: 59px;
+    position: relative;
+    width: 32px;
+  }
+  
+  .frame .text-wrapper-8 {
+    color: #363435;
+    font-family: "Quantico", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .frame .div-7 {
+    align-items: center;
+    display: inline-flex;
+    gap: 33px;
+    left: 407px;
+    position: absolute;
+    top: 15px;
+  }
+  
+  .frame .design-component-instance-node-2 {
+    color: #383838 !important;
+  }
+  
+  .frame .property-default-instance {
+    color: #383838 !important;
+    left: -2px !important;
+  }
+  
+  .frame .property-1-default-instance {
+    width: 61px !important;
+  }
+  
+  .frame .resources-2 {
+    color: #383838 !important;
+    left: 4px !important;
+  }

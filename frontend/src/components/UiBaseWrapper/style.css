@@ -1,0 +1,34 @@
+.ui-base-wrapper {
+    height: 1000px;
+    width: 1000px;
+  }
+  
+  .ui-base-wrapper .overlap-group-wrapper {
+    height: 244px;
+    left: 336px;
+    position: relative;
+    top: 378px;
+    width: 332px;
+  }
+  
+  .ui-base-wrapper .overlap-group {
+    height: 244px;
+    position: relative;
+  }
+  
+  .ui-base-wrapper .layer-copy {
+    height: 239px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 332px;
+  }
+  
+  .ui-base-wrapper .layer-5 {
+    height: 231px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 327px;
+  }
+  

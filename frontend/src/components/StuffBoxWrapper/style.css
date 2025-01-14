@@ -1,0 +1,14 @@
+.stuff-box-wrapper {
+    height: 600px;
+    position: relative;
+    width: 600px;
+  }
+  
+  .stuff-box-wrapper .layer-3 {
+    height: 171px;
+    left: 160px;
+    position: absolute;
+    top: 215px;
+    width: 281px;
+  }
+  

@@ -1,0 +1,14 @@
+.seat {
+    height: 700px;
+    position: relative;
+    width: 700px;
+  }
+  
+  .seat .img-6 {
+    height: 395px;
+    left: 195px;
+    position: absolute;
+    top: 305px;
+    width: 310px;
+  }
+  

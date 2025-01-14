@@ -1,0 +1,14 @@
+.table-locker {
+    height: 500px;
+    position: relative;
+    width: 500px;
+  }
+  
+  .table-locker .img-3 {
+    height: 469px;
+    left: 67px;
+    position: absolute;
+    top: 31px;
+    width: 366px;
+  }
+  

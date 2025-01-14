@@ -1,0 +1,14 @@
+.stuff-coffee {
+    height: 300px;
+    position: relative;
+    width: 300px;
+  }
+  
+  .stuff-coffee .coffee {
+    height: 146px;
+    left: 86px;
+    position: absolute;
+    top: 77px;
+    width: 129px;
+  }
+  

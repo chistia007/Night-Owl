@@ -1,0 +1,23 @@
+.ui-base {
+    height: 1000px;
+    width: 1000px;
+  }
+  
+  .ui-base .ui {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-13-copy.png);
+    background-size: 100% 100%;
+    height: 430px;
+    left: 176px;
+    position: relative;
+    top: 285px;
+    width: 649px;
+  }
+  
+  .ui-base .layer-4 {
+    height: 348px;
+    left: 38px;
+    position: absolute;
+    top: 31px;
+    width: 573px;
+  }
+  

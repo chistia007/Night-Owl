@@ -1,0 +1,23 @@
+.div-wrapper {
+    height: 1000px;
+    width: 1000px;
+  }
+  
+  .div-wrapper .layer-wrapper {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-12-copy.png);
+    background-size: 100% 100%;
+    height: 530px;
+    left: 176px;
+    position: relative;
+    top: 242px;
+    width: 649px;
+  }
+  
+  .div-wrapper .layer-8 {
+    height: 448px;
+    left: 38px;
+    position: absolute;
+    top: 34px;
+    width: 573px;
+  }
+  

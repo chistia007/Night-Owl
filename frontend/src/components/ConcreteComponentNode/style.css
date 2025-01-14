@@ -1,0 +1,20 @@
+.concrete-component-node {
+    height: 24px;
+    position: relative;
+    width: 78px;
+  }
+  
+  .concrete-component-node .text-wrapper-3 {
+    color: #000000;
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    white-space: nowrap;
+  }
+  

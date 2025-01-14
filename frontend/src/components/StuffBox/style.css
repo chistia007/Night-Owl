@@ -1,0 +1,14 @@
+.stuff-box {
+    height: 600px;
+    position: relative;
+    width: 600px;
+  }
+  
+  .stuff-box .layer-2 {
+    height: 172px;
+    left: 185px;
+    position: absolute;
+    top: 186px;
+    width: 230px;
+  }
+  

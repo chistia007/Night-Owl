@@ -1,0 +1,23 @@
+.elements-orb {
+    height: 1000px;
+    width: 1000px;
+  }
+  
+  .elements-orb .orb {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-101-copy-2@2x.png);
+    background-size: 100% 100%;
+    height: 222px;
+    left: 391px;
+    position: relative;
+    top: 391px;
+    width: 213px;
+  }
+  
+  .elements-orb .layer-7 {
+    height: 147px;
+    left: 33px;
+    position: absolute;
+    top: 29px;
+    width: 146px;
+  }
+  

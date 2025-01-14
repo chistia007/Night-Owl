@@ -1,0 +1,23 @@
+.clock {
+    height: 600px;
+    width: 600px;
+  }
+  
+  .clock .clock-wrapper {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/clock-shadow@2x.png);
+    background-size: 100% 100%;
+    height: 439px;
+    left: 85px;
+    position: relative;
+    top: 93px;
+    width: 427px;
+  }
+  
+  .clock .img-5 {
+    height: 350px;
+    left: 41px;
+    position: absolute;
+    top: 22px;
+    width: 350px;
+  }
+  

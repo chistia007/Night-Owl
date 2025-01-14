@@ -1,0 +1,1 @@
+export { Imac } from "./Imac";

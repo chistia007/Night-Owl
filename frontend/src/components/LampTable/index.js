@@ -1,0 +1,1 @@
+export { LampTable } from "./LampTable";

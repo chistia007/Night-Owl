@@ -1,0 +1,14 @@
+.table {
+    height: 600px;
+    position: relative;
+    width: 1400px;
+  }
+  
+  .table .img-2 {
+    height: 548px;
+    left: 14px;
+    position: absolute;
+    top: 52px;
+    width: 1375px;
+  }
+  

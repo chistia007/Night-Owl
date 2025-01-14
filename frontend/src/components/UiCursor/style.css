@@ -1,0 +1,23 @@
+.ui-cursor {
+    height: 400px;
+    width: 400px;
+  }
+  
+  .ui-cursor .cursor {
+    background-image: url(https://c.animaapp.com/f2BJnpFp/img/layer-16-copy@2x.png);
+    background-size: 100% 100%;
+    height: 365px;
+    left: 76px;
+    position: relative;
+    top: 57px;
+    width: 297px;
+  }
+  
+  .ui-cursor .cursor-2 {
+    height: 179px;
+    left: 36px;
+    position: absolute;
+    top: 28px;
+    width: 180px;
+  }
+  

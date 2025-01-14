@@ -1,0 +1,14 @@
+.lamp-table {
+    height: 600px;
+    position: relative;
+    width: 600px;
+  }
+  
+  .lamp-table .layer-10 {
+    height: 459px;
+    left: 123px;
+    position: absolute;
+    top: 141px;
+    width: 355px;
+  }
+  
